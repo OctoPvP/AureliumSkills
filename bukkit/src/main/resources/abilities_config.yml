@@ -293,6 +293,7 @@ abilities:
       cooldown_ticks: 6000
     bleed:
       enabled: true
+      enable_self_bleed: false
       base: 3.0
       per_level: 3.0
       base_2: 0.5

@@ -100,6 +100,8 @@ public class FightingAbilities extends AbilityProvider implements Listener {
 
     public void bleed(EntityDamageByEntityEvent event, PlayerData playerData, LivingEntity entity) {
         if (playerData.getAbilityLevel(Ability.BLEED) == 0) return;
+        // disable self damage causing bleeding
+        if (event.getDamager().equals(event.getEntity()) && !plugin.getAbilityManager().getOptionAsBooleanElseTrue(Ability.BLEED, "enable_self_bleed")) return;
 
         if (r.nextDouble() < (getValue(Ability.BLEED, playerData) / 100)) {
             if (event.getFinalDamage() < entity.getHealth()) {
