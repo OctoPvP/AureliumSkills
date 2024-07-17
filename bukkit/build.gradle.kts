@@ -44,7 +44,7 @@ dependencies {
     implementation("de.tr7zw:item-nbt-api:2.12.2")
     implementation("com.github.Archy-X:XSeries:887fe61174")
     implementation("org.bstats:bstats-bukkit:3.0.0")
-    implementation("org.jetbrains:annotations:23.0.0")
+    implementation("org.jetbrains:annotations:24.1.0")
     implementation("com.udojava:EvalEx:2.7")
     implementation("com.github.Archy-X:Slate:d2a43587ad") {
         exclude("org.spigotmc", "spigot-api")
